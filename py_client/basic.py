@@ -1,10 +1,9 @@
 import requests 
 
-# endpoints="https://httpbin.org/"
-endpoints="http://127.0.0.1:8000/api" 
-get_response=requests.get(endpoints,params={'abc':123},json={'query':'hello'}) # HTttp request
-print(get_response.headers)
+endpoints="http://127.0.0.1:8000/api/products/1" 
+get_response=requests.get(endpoints)
 
-print(get_response.text)
-              
-print(get_response.json())              
+               
+print(get_response.json())    
+          
+ 
